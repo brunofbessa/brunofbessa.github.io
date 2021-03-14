@@ -8,16 +8,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bruno F. Bessa - About/Contact</title>
+    <title>Post: </title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
 
   </head>
 
@@ -50,29 +50,49 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/about-bg.jpg')">
+    <header class="masthead" style="background-image: url('../img/POST_GB.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="page-heading">
-              <h1>About Me</h1>
-              <span class="subheading">This is what I do.</span>
+            <div class="post-heading">
+              <h1>New blog on github</h1>
+              <h2 class="subheading">TITLE</h2>
+              <span class="meta">Posted by
+                <a href="">Bruno F. Bessa</a>
+                on Month dd, yyyy</span>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <p>I am a developer from Brazil that enjoys a lot of diffetent contents both technical and non-technical. Ths website will be used to share some of my interests with you so you can know me a little.</p>
-          <p>You can reach me out in <a href="https://www.linkedin.com/in/brunofbessa/">Linkedin</a> and send me a message if you want.</p>
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p></p>
+
+            <h2 class="section-heading">SUBTITLE</h2>
+
+            <p></p>
+
+            <blockquote class="blockquote">quote</blockquote>
+
+            <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+
+
+            <a href="#">
+              <img class="img-fluid" src="../img/IMAGE" alt="">
+            </a>
+            <span class="caption text-muted"CAPTION.</span>
+
+
+          </div>
         </div>
       </div>
-    </div>
+    </article>
 
     <hr>
 
