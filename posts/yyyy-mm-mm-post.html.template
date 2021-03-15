@@ -72,23 +72,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <p></p>
+            div align="justify">
+              <p></p>
 
-            <h2 class="section-heading">SUBTITLE</h2>
+              <h2 class="section-heading">SUBTITLE</h2>
 
-            <p></p>
+              <p></p>
 
-            <blockquote class="blockquote">quote</blockquote>
+              <blockquote class="blockquote">quote</blockquote>
 
-            <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-
-            <a href="#">
-              <img class="img-fluid" src="../img/IMAGE" alt="">
-            </a>
-            <span class="caption text-muted"CAPTION.</span>
+              <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
 
 
+              <a href="#">
+                <img class="img-fluid" src="../img/IMAGE" alt="">
+              </a>
+              <span class="caption text-muted"CAPTION.</span>
+
+            </div>
           </div>
         </div>
       </div>
