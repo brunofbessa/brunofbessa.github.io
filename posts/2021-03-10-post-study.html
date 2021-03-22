@@ -84,17 +84,31 @@
               </a>
               <span class="caption text-muted">Framework for GSSL problem solving proposed by the authors.</span>
 
-              <p>The paper brings a comprehensive set of definitions for graph-related concps necessary for the study of GSSL.</p>
+              <p>The paper brings a comprehensive set of definitions for graph-related concepts necessary for the study of GSSL.</p>
 
               <p>The paper details techniques for costruction of the initial graph that represents the network to be studied. We have unsupervised and supervised methods. The supervised method calculates similarity between the nodes of the graph to infer the unlabeled nodes (KNN and b-matching approaches). Supervised methods are listed regarding recent researches.</p>
 
               <p>For the classic GSSL methods, after the construction of the graph is necessary to perform its regularization, by calculating a function that is as close to the labels as possible and is smooth on the entire graph. This function is called Loss Function.</p>
 
               <p>
-                \[\mathcal{L}(f)  = \sum_{{x}_{i},{y}_{i} \in \mathcal{D}_{l}} {\mathcal{L}_{s}(f({x}_{i},{y}_{i})) + \mu} + \sum_{{x}_{i} \in \mathcal{D}_{l}} {\mathcal{L}_{r}(f({x}_{i}))}\]
+                \[\mathcal{L}(f)  = \sum_{{x}_{i},{y}_{i} \in \mathcal{D}_{l}} {\mathcal{L}_{s}(f({x}_{i},{y}_{i})) + \mu} + \sum_{{x}_{i} \in \mathcal{D}_{l}} {\mathcal{L}_{r}(f({x}_{i}))} \tag{1}\]
               </p>
 
-              <p></p>
+              <p>In the equation above (1) the first sum terms is the supervised loss component and the second one is the regularization loss component. There are multiple alternatives to the regulaization calculation and they differ in the particular choice of the loss function with various regularizers. the table bellow summarizes the Graph Regularization Methods:</p>
+
+              <p>
+                \begin{array} {|r|r|}
+                  \hline \text{Method} & \text{Supervised loss } f_{s}(f, \mathcal{D}_{l}) & \text{Graph regularization loss } f_{r}(\mathcal{D}) \\
+                  \hline \text{Gaussian Random Fields}        & \sum_{i=1}^{n_{l}}(f(x_{i}) - y_{i})^{2}      & \sum_{i, j}W_{i,j}(f(x_{i}) - y_{i})^{2} \\
+                  \hline \text{Local and Global Consistency}  & \sum_{i=1}^{n_{l}}(f(x_{i}) - y_{i})^{2}      & (\sum_{i, j}W_{i,j}(f(x_{i})/\sqrt{D_{i,j}} - f(x_{j})/\sqrt{D_{i,j}})^{2}) \\
+                  \hline \text{p-Laplacian}                   & \sum_{i=1}^{n_{l}}(f(x_{i}) - y_{i})^{2}      & \sum_{i, j}W_{i,j}\left|f(x_{i})/\sqrt{D_{i,j}} - f(x_{j})/\sqrt{D_{i,j}}\right|^{p} \\
+                  \hline \text{Directed regularization}       & \sum_{i=1}^{n_{l}}(f(x_{i}) - y_{i})^{2}      & (\sum_{i, j}\pi(i)p(i,j)(f(x_{i})/\sqrt{D_{i,j}} - f(x_{j})/\sqrt{D_{i,j}})^{2}) \\
+                  \hline \text{Manifold regularization}       & \sum_{i=1}^{n_{l}}(f(x_{i}) - y_{i})^{2}      & \gamma_{A}\|f\|_{K}^{2} + \gamma_{I} \frac{1}{(n_{l} + n_{u})^2} \hat{y}^{T} L\hat{y} \\
+                  \hline \text{Deformed Graph Laplacian (LPDGL)} & \sum_{i=1}^{n_{l}}(f(x_{i}) - y_{i})^{2}   & (\sum_{i, j}W_{i,j}(f(x_{i}) - y_{i})^{2}) + (\sum_{i=1}^{n}(1 - \frac{D_{i,j}}{\sum_{i=1}^{n}D_{i,j}}(f(x_{i}))^2) \\
+                  \hline \text{Poisson learning}              & \sum_{i=1}^{n_{l}}(f(x_{i}) - y_{i})^{2}      & (\sum_{i, j}W_{i,j}(f(x_{i}) - \sum_{j \in \mathcal{N}} f(x_{i}))^2) \\
+                  \hline
+                \end{array}
+              </p>
 
               <p><b>to be continued</b></p>
 
