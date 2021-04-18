@@ -8,16 +8,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bruno F. Bessa - Professional Blog</title>
+    <title>Post: </title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
 
   </head>
 
@@ -50,58 +50,50 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <header class="masthead" style="background-image: url('../img/POST_GB.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-              <h1>Professional Blog</h1>
-              <span class="subheading">A place to share work related material</span>
+            <div class="post-heading">
+              <h1>New blog on github</h1>
+              <h2 class="subheading">TITLE</h2>
+              <span class="meta">Posted by
+                <a href="">Bruno F. Bessa</a>
+                on Month dd, yyyy</span>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-preview">
-            <a href="posts/2021-03-10-post-study.html">
-              <h2 class="post-title">
-                Article Review: "Graph-based Semi-supervised Learning: A comprehensive Review", by Zixing Song et al.
-              </h2>
-              <h3 class="post-subtitle">
-                A review of the use of GNN for general purpose problem solving
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Bruno F. Bessa</a>
-              on March 10, 2021</p>
-          </div>
-          <div class="post-preview">
-            <a href="posts/2021-04-17-post-study.html">
-              <h2 class="post-title">
-                Article Review: "On Power-Law Relationships of the Internet Topology", By Faloutsos et al.
-              </h2>
-              <h3 class="post-subtitle">
-                A study on the evolutive topology of the Internet
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Bruno F. Bessa</a>
-              on April 17, 2021</p>
-          </div>
-          <hr>
-          <!-- Pager -->
-          <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div align="justify">
+              <p></p>
+
+              <h2 class="section-heading">SUBTITLE</h2>
+
+              <p></p>
+
+              <blockquote class="blockquote">quote</blockquote>
+
+              <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+
+
+              <a href="#">
+                <img class="img-fluid" src="../img/IMAGE" alt="">
+              </a>
+              <span class="caption text-muted"CAPTION.</span>
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </article>
 
     <hr>
 
@@ -132,6 +124,12 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
+
+    <!-- Script for equations with MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 
   </body>
 
